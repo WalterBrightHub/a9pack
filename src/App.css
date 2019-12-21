@@ -1,38 +1,59 @@
-.App {
+.buy{
+  background-color: #c3fb12;
+}
+
+.navbar,body{
+  background-color: #030e24;
+  color:white;
+}
+
+body{
+  padding: 1em;
+}
+
+.sub-title{
+  font-size: 1.5em;
+}
+
+.pack-title{
+  font-size: 1.2em;
+}
+
+.pack-description,.pack-content{
+  padding-bottom: 1em;
+}
+
+.pack-content{
   text-align: center;
+  font-size: 1.2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.token{
+  background-color: #0e90f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.star-yellow{
+  color:#fff34a;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.star-grey{
+  color:#808080;
 }
 
-.App-link {
-  color: #61dafb;
+.last-name{
+  font-weight:bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.car-card+.car-card{
+  margin-top:0.5em;
+}
+
+.star-block{
+  display: inline-block;
+  width:9em;
+}
+
+.card-process{
+  display: inline-block;
+  width:5em;
 }
