@@ -1,9 +1,5 @@
-import React from 'react';
-
-import 'antd-mobile/dist/antd-mobile.css';
-
-import './App.css'
-import PackSimulator from "./conponents/PackSimulator";
+import React from "react";
+import PackSimulator from "../../conponents/PackSimulator";
 
 const akylonePackInfo={
   cars:[
@@ -65,15 +61,8 @@ const akylonePackInfo={
   ]
 }
 
-class App extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+const Akylone=()=>(
+  <PackSimulator packInfo={akylonePackInfo}></PackSimulator>
+)
 
-  render() {
-    return <PackSimulator packInfo={akylonePackInfo}></PackSimulator>
-  }
-}
-
-
-export default App;
+export default Akylone
