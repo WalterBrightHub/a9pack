@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { luckyWithShuffle } from '../lucky'
+import { luckyWithShuffle } from '../utils/lucky'
 
 
 import { Button,  Badge} from 'antd-mobile'

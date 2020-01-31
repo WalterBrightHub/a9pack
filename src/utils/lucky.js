@@ -18,6 +18,7 @@ export const lucky=dropRates=>{
 //先洗牌，再按概率抽取
 export const luckyWithShuffle=dropRates=>{
   const totalRates=dropRates.reduce((sum,rate)=>sum+rate)
+  // console.log(totalRates)
   const dropRatesWithIndex=dropRates.map((rate,index)=>({rate,index}))
   const sumRatesWithShuffle=_.shuffle(dropRatesWithIndex)
   for(let i=1;i<sumRatesWithShuffle.length;i++){
