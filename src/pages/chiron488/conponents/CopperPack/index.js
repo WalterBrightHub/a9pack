@@ -5,7 +5,7 @@ import { luckyWithShuffle } from '../../../../utils/lucky'
 
 import { Button,Flex} from 'antd-mobile'
 
-const Pack = ({pack_content, onAddCredit,  onAddCount648, onAddCarCard, onShowRewordModal,countCopperPack,onAddCountCopperPack,onAddCopper,copper }) => {
+const Pack = ({pack_content, onAddCredit,  onAddCount648, onAddCarCard, onShowRewordModal,countCopperPack,onAddCountCopperPack,onAddCopper,copper,onAddToken }) => {
 
 
   const onHandle=n=>()=>{
@@ -54,7 +54,7 @@ const Pack = ({pack_content, onAddCredit,  onAddCount648, onAddCarCard, onShowRe
     onShowRewordModal(infos)
   }
 
-  const onHandleMust=n=>()=>{
+  const onHandleMust=(n,bd)=>()=>{
 
     const cost=n*75
 
@@ -85,16 +85,24 @@ const Pack = ({pack_content, onAddCredit,  onAddCount648, onAddCarCard, onShowRe
     let items=[]
 
     let haveBD=false
+    let star=0
     while(!haveBD){
       items=[]
       for(let i=0;i<n;i++){
         const item_index = luckyWithShuffle(dropRates)
         const item = pack_content[item_index]
-        if(item_index<15){
+        if(item_index<bd){
           haveBD=true
         }
         items.push(item)
       }
+      if(!haveBD){
+        star++
+        onAddToken(-58*n)
+      }
+    }
+    if(star>0){
+      infos.push(`神秘组织收取蓝币 -${star} *${58*n}`)
     }
     items.map(item=>{
       const { title, num, type } = item
@@ -121,12 +129,12 @@ const Pack = ({pack_content, onAddCredit,  onAddCount648, onAddCarCard, onShowRe
       <Flex.Item>
         <Button className='buy'
                 activeStyle={{ backgroundColor: '#040f25', color: '#c3fb12' }}
-                onClick={onHandle(1)}>购买1  点券75</Button>
+                onClick={onHandleMust(1,4)}>购买1  点券75</Button>
       </Flex.Item>
       <Flex.Item>
         <Button className='buy'
                 activeStyle={{ backgroundColor: '#040f25', color: '#c3fb12' }}
-                onClick={onHandleMust(10)}>购买10  点券750</Button>
+                onClick={onHandleMust(10,3)}>购买10  点券750</Button>
       </Flex.Item>
     </Flex>
 

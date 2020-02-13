@@ -35,6 +35,7 @@ const Pack = ({pack_content, onAddCredit,  onAddCount648, onAddCarCard, onShowRe
     onAddCountCopperPack(n)
 
     const dropRates = pack_content.map(item => item.drop_rate)
+    console.log(dropRates.reduce((sum,rate)=>sum+rate))
     let infos = []
     for (let i = 0; i < n; i++) {
       //const item_index=lucky(dropRates)
@@ -90,7 +91,7 @@ const Pack = ({pack_content, onAddCredit,  onAddCount648, onAddCarCard, onShowRe
       for(let i=0;i<n;i++){
         const item_index = luckyWithShuffle(dropRates)
         const item = pack_content[item_index]
-        if(item_index<15){
+        if(item_index<4){
           haveBD=true
         }
         items.push(item)
@@ -113,8 +114,8 @@ const Pack = ({pack_content, onAddCredit,  onAddCount648, onAddCarCard, onShowRe
   }
 
   return <div>
-    <div className='pack-description'>有机会直接解锁 Bugatti Chiron。</div>
-    <div className='pack-description'>购买十连礼包，必定获得稀有卡牌或更高品质。</div>
+    <div className='pack-description'>有机会直接解锁 McLaren Senna。</div>
+    <div className='pack-description'>购买十连礼包，必定获得 Senna 图纸。</div>
 
 
     <Flex>
