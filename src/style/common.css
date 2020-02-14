@@ -1,0 +1,47 @@
+.buy {
+    background-color: #b4ed00;
+}
+
+.buy:active {
+    background-color: #040f25;
+    color: #c3fb12;
+}
+
+.simulator {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.navbar, body {
+    background-color: #030e24;
+    color: white;
+}
+
+body {
+    padding: 1em;
+}
+
+.sub-title {
+    font-size: 1.5em;
+    border-left: #e40754 0.3em solid;
+    padding-left: 0.3em;
+    margin-bottom: 0.7em;
+}
+
+.content-body {
+    margin-bottom: 2em;
+}
+
+.pack-title {
+    font-size: 1.2em;
+}
+
+
+.pack-content {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.token {
+    background-color: #0e90f2;
+}

@@ -1,0 +1,34 @@
+
+.star-yellow {
+    color: #fff34a;
+}
+
+.star-grey {
+    color: #808080;
+}
+
+.last-name {
+    font-weight: bold;
+    margin-top: 0.1em;
+}
+
+.car-card + .car-card {
+    margin-top: 0.5em;
+}
+
+.star-block {
+    display: inline-block;
+    width: 7em;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+}
+
+.card-process {
+    /*margin-left: 1em;*/
+    display: inline-block;
+    width: 5em;
+}
+
+.son {
+    color: #c6fb0f;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 
 import PackSimulator from "./conponents/PackSimulator";
-import {copperPackInfo} from "./SennaPackInfo";
+import {copperPackInfo} from "./packInfo";
 
 const Senna=()=>(
   <PackSimulator

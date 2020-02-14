@@ -1,11 +1,11 @@
 import React from 'react';
 import {Card, Flex, Modal, WhiteSpace} from "antd-mobile";
 
-import CarCard from "./CarCard";
+import CarCard from "../../../../conponents/CarCard";
 
-import Pack from "./Pack";
+import Pack from "../Pack";
 
-import './PackSimulator.css'
+import '../../../../style/common.css'
 
 const akylonePackInfo={
   cars:[

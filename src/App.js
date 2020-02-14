@@ -15,7 +15,7 @@ import './App.css'
 
 import Index from "./pages/index";
 
-import Chiron from "./pages/chiron488";
+import Chiron from "./pages/chiron";
 import Egoista from "./pages/egoista";
 import Akylone from "./pages/akylone";
 import Mclaren570s from "./pages/mclaren570s";

@@ -3,7 +3,7 @@ import {Card, Flex, Modal, WhiteSpace} from "antd-mobile";
 import CopperPack from "../CopperPack";
 import CarCard from "../../../../conponents/CarCard";
 
-import '../../../../conponents/PackSimulator.css'
+import '../../../../style/common.css'
 
 class PackSimulator extends React.Component{
   constructor(props) {

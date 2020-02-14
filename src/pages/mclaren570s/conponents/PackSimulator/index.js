@@ -4,7 +4,7 @@ import CopperPack from "../CopperPack";
 import TokenPack from '../TokenPack'
 import CarCard from "../../../../conponents/CarCard";
 
-import '../../../../conponents/PackSimulator.css'
+import '../../../../style/common.css'
 
 class PackSimulator extends React.Component{
   constructor(props) {
