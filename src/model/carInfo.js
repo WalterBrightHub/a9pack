@@ -89,6 +89,13 @@ const carInfo = {
       lastName: 'Lancer Evolution',
       quality: 'uncommon',
       starArray: [0, 5, 25, 55]
+    },
+  'R1 550':
+    {
+      firstName: 'SIN',
+      lastName: 'R1 550',
+      quality: 'epic',
+      starArray: [0, 40, 18, 21, 25, 36]
     }
 }
 

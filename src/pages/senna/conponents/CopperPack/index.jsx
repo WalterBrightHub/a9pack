@@ -2,8 +2,6 @@ import React from 'react'
 
 import {luckyWithShuffle} from '../../../../utils/lucky'
 
-import carInfo from "../../../../model/carInfo";
-
 
 import {Button, Flex} from 'antd-mobile'
 
@@ -38,7 +36,7 @@ const Pack = ({pack_content, onAddCredit, onAddCount648, onAddCarCard, onShowRew
     for (let i = 0; i < n; i++) {
       const item_index = luckyWithShuffle(dropRates)
       const item = pack_content[item_index]
-      const {title, num, type, car_code} = item
+      const {num, type, car_code} = item
       // infos.push(`${title} ${num}`)
       if (type === 'car_card') {
         infos.push({type, car_code, num})
@@ -92,7 +90,7 @@ const Pack = ({pack_content, onAddCredit, onAddCount648, onAddCarCard, onShowRew
       }
     }
     items.map(item => {
-      const {title, num, type, car_code} = item
+      const {num, type, car_code} = item
       if (type === 'car_card') {
         infos.push({type, car_code, num})
         onAddCarCard(car_code, num)

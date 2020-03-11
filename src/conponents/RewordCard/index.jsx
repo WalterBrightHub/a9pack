@@ -15,9 +15,11 @@ const RewordCard = ({info}) => {
     return <div className='reword-block'><span className='reword reword-credit'>金币</span>
       <span className='reword-num'>x {info.num}</span>
     </div>
-  } else {
+  } else if (type === 'import_part') {
+    const {num, car_code} = info
     return <div className='reword-block'>
-      {type}
+      <span className={`reword reword-${carInfo[car_code].quality}`}>{car_code} 传奇零件</span>
+      <span className='reword-num'>x {num}</span>
     </div>
   }
 }

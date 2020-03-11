@@ -7,6 +7,11 @@ class Index extends React.Component{
     super(props);
     this.state= {
       packs: [
+
+        {
+          name: 'SIN R1 550 限时卡包',
+          url: '/sin'
+        },
         {
           name: 'McLaren Senna 限时卡包',
           url: '/senna',

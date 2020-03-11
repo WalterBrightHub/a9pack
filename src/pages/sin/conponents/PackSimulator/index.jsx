@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, Flex, Modal,} from "antd-mobile";
+import {Card, Flex, Modal} from "antd-mobile";
 import CopperPack from "../CopperPack";
 import CarCard from "../../../../conponents/CarCard";
 import carInfo from "../../../../model/carInfo";
@@ -12,22 +12,11 @@ class PackSimulator extends React.Component {
     super(props);
 
     const cars = [
-      'Senna',
-      '003 S',
-      '2017 NSX',
-      'F-Type SVR',
-      'Sprint 220',
-      'DB11',
-      'AMG GT S',
-      '911 GTS Coupe',
-      '3.0 CSL',
-      'Challenger SRT8',
-      'Camaro LT',
-      'Lancer Evolution',
+      'R1 550',
     ]
 
     //除了这些车，其余默认满星
-    const notMaxCars = ['Senna']
+    const notMaxCars = ['R1 550']
 
     const garage = cars.reduce((garage, carName) => ({
       ...garage,
@@ -46,7 +35,10 @@ class PackSimulator extends React.Component {
       credit: 0,
       garage,
       show_reword_modal: false,
-      last_reword: ['水明的360']
+      last_reword: ['水明的360'],
+      import_parts: {
+        'R1 550': 0
+      }
     }
 
     this.onShowRewordModal = this.onShowRewordModal.bind(this)
@@ -62,7 +54,21 @@ class PackSimulator extends React.Component {
     this.showModal = this.showModal.bind(this)
     this.onWrapTouchStart = this.onWrapTouchStart.bind(this)
 
+    this.onAddImportPart = this.onAddImportPart.bind(this)
 
+
+  }
+
+  onAddImportPart(code, n) {
+    this.setState(prevState => {
+      const num = prevState.import_parts[code]
+      return {
+        import_parts: {
+          ...prevState.import_parts,
+          [code]: num + n
+        }
+      }
+    })
   }
 
 
@@ -166,7 +172,7 @@ class PackSimulator extends React.Component {
 
         <Card full className='content-body'>
           <Card.Header
-            title="McLaren Senna 限时卡包"/>
+            title="SIN R1 550 福利礼包"/>
           <Card.Body>
             <CopperPack
               countCopperPack={this.state.countCopperPack}
@@ -178,6 +184,7 @@ class PackSimulator extends React.Component {
               copper={this.state.copper}
               onAddCount648={this.onAddCount648}
               onShowRewordModal={this.onShowRewordModal}
+              onAddImportPart={this.onAddImportPart}
             />
           </Card.Body>
         </Card>
@@ -186,7 +193,7 @@ class PackSimulator extends React.Component {
         <div className='sub-title'>我的物品</div>
         <Flex wrap='wrap' className='content-body'>
           <Flex.Item>点券 {this.state.copper}</Flex.Item>
-          <Flex.Item>金币 {this.state.credit}</Flex.Item>
+          {/*<Flex.Item>金币 {this.state.credit}</Flex.Item>*/}
 
         </Flex>
 
@@ -208,6 +215,15 @@ class PackSimulator extends React.Component {
               key={carCode}
             />
           })}
+        </div>
+
+
+        <div className='sub-title'>我的仓库</div>
+        <div className='content-body'>{
+          <div>SIN R1 550 传奇零件 <span
+            style={{color: '#c6fb0f'}}>{this.state.import_parts['R1 550']}</span></div>
+        }
+
         </div>
 
       </div>

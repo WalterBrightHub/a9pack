@@ -1,17 +1,17 @@
-import React from 'react';
+import React
+//,{Suspense, lazy}
+  from 'react';
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  // Link
 } from "react-router-dom";
 
 import 'antd-mobile/dist/antd-mobile.css';
 
 import './App.css'
-// import Akylone from "./pages/akylone";
-//import Mclaren570s from "./pages/mclaren570s";
 
 import Index from "./pages/index";
 
@@ -20,8 +20,16 @@ import Egoista from "./pages/egoista";
 import Akylone from "./pages/akylone";
 import Mclaren570s from "./pages/mclaren570s";
 import Senna from "./pages/senna";
+import Sin from "./pages/sin";
 
-//import Egoista from './pages/egoista'
+// code spliting
+//
+// const Chiron=lazy(()=>import('./pages/chiron'))
+// const Egoista=lazy(()=>import('./pages/egoista'))
+// const Akylone=lazy(()=>import('./pages/akylone'))
+// const Mclaren570s=lazy(()=>import('./pages/mclaren570s'))
+// const Senna=lazy(()=>import('./pages/senna'))
+// const Sin=lazy(()=>import('./pages/sin'))
 
 
 class App extends React.Component {
@@ -32,28 +40,32 @@ class App extends React.Component {
   render() {
     return <Router basename='/a9pack'>
       <div>
-
+        {/*<Suspense fallback=''>*/}
         <Switch>
 
           <Route path="/" exact>
-            <Index />
+            <Index/>
+          </Route>
+          <Route path="/sin">
+            <Sin/>
           </Route>
           <Route path="/senna">
-            <Senna />
+            <Senna/>
           </Route>
           <Route path="/chiron">
-            <Chiron />
+            <Chiron/>
           </Route>
           <Route path="/egoista">
-            <Egoista />
+            <Egoista/>
           </Route>
           <Route path="/akylone">
-            <Akylone />
+            <Akylone/>
           </Route>
           <Route path="/m570s">
-            <Mclaren570s />
+            <Mclaren570s/>
           </Route>
         </Switch>
+        {/*</Suspense>*/}
       </div>
     </Router>
   }
