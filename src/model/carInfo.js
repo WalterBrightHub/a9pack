@@ -96,7 +96,50 @@ const carInfo = {
       lastName: 'R1 550',
       quality: 'epic',
       starArray: [0, 40, 18, 21, 25, 36]
-    }
+    },
+  'P1': {
+    firstName: 'McLaren',
+    lastName: 'P1',
+    quality: 'rare',
+    starArray: [0, 35, 15, 21, 24, 36]
+  },
+  'J50': {
+    firstName: 'Ferrari',
+    lastName: 'J50',
+    quality: 'rare',
+    starArray: [0, 40, 18, 25, 36]
+  },
+  'LaFerrari Aperta': {
+    firstName: 'Ferrari',
+    lastName: 'LaFerrari Aperta',
+    quality: 'epic',
+    starArray: [0, 30, 30, 30, 35, 35, 40]
+  },
+  'Shelby GT350R': {
+    firstName: 'Ford',
+    lastName: 'Shelby GT350R',
+    quality: 'uncommon',
+    starArray: [0, 20, 18, 25, 36]
+  },
+  'M4 GTS': {
+    firstName: 'BMW',
+    lastName: 'M4 GTS',
+    quality: 'uncommon',
+    starArray: [0, 40, 25, 36]
+  },
+  '718 Cayman': {
+    firstName: 'Porsche',
+    lastName: '718 Cayman',
+    quality: 'uncommon',
+    starArray: [0, 25, 18, 25, 36]
+  },
+  'DS E-Tense': {
+    firstName: 'DS Automobiles',
+    lastName: 'DS E-Tense',
+    quality: 'uncommon',
+    starArray: [0, 20, 18, 36]
+  }
 }
+
 
 export default carInfo

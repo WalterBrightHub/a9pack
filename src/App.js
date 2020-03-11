@@ -21,6 +21,7 @@ import Akylone from "./pages/akylone";
 import Mclaren570s from "./pages/mclaren570s";
 import Senna from "./pages/senna";
 import Sin from "./pages/sin";
+import Aperta from "./pages/aperta";
 
 // code spliting
 //
@@ -45,6 +46,9 @@ class App extends React.Component {
 
           <Route path="/" exact>
             <Index/>
+          </Route>
+          <Route path="/aperta">
+            <Aperta/>
           </Route>
           <Route path="/sin">
             <Sin/>

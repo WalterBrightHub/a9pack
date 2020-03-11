@@ -9,27 +9,31 @@ class Index extends React.Component{
       packs: [
 
         {
-          name: 'SIN R1 550 限时卡包',
+          name: 'Ferrari LaFerrari Aperta',
+          url: '/aperta'
+        },
+        {
+          name: 'SIN R1 550',
           url: '/sin'
         },
         {
-          name: 'McLaren Senna 限时卡包',
+          name: 'McLaren Senna',
           url: '/senna',
         },
         {
-          name: 'Lamborghini Egoista 限时卡包',
+          name: 'Lamborghini Egoista',
           url: '/egoista',
         },
         {
-          name: 'Bugatti Chiron 限时卡包',
+          name: 'Bugatti Chiron',
           url: '/chiron',
         },
         {
-          name: 'McLaren 570S 限时卡包',
+          name: 'McLaren 570S',
           url: '/m570s',
         },
         {
-          name: 'Gently Akylone 限时卡包',
+          name: 'Gently Akylone',
           url: '/akylone'
         },
       ]
@@ -47,16 +51,25 @@ class Index extends React.Component{
     return <div>
       <div
         style={{
-          fontSize:'2em',
-          textAlign:'center',
-          margin:'1em 0'
+          fontSize: '2em',
+          textAlign: 'center',
+          margin: '1em 0',
         }}
-      >礼包模拟器</div>
-      {this.state.packs.map((pack,index)=>(
-        <div key={index} style={{paddingTop:'1em'}}>
-          <Button onClick={this.jumpTo(pack.url)}>{pack.name}</Button>
-        </div>
-      ))}
+      >礼包模拟器
+      </div>
+      <div
+        style={{
+          maxWidth: '480px',
+          margin: '0 auto'
+        }}
+      >
+        {this.state.packs.map((pack, index) => (
+          <div key={index} style={{paddingTop: '1em'}}>
+            <Button onClick={this.jumpTo(pack.url)}>{pack.name}</Button>
+          </div>
+        ))}
+
+      </div>
     </div>
   }
 }
