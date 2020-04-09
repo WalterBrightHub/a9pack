@@ -12,24 +12,34 @@
     margin: 0 auto;
 }
 
-.navbar, body {
+.navbar {
     background-color: #030e24;
-    color: white;
+    color: #303030;
 }
 
+
+
 body {
-    padding: 1em;
+    /*padding: 1em;*/
 }
 
 .sub-title {
     font-size: 1.5em;
-    border-left: #e40754 0.3em solid;
+    /*border-left: #e40754 0.3em solid;*/
     padding-left: 0.3em;
     margin-bottom: 0.7em;
+    color: #303030;
 }
 
 .content-body {
     margin-bottom: 2em;
+}
+
+.garage {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    color: #303030;
 }
 
 .pack-title {
@@ -39,9 +49,26 @@ body {
 
 .pack-content {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 168px;
 }
 
 .token {
     background-color: #0e90f2;
+}
+
+.coin-item {
+    background-color: #fff;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 100px;
+}
+
+.coin-value {
+    margin-left: auto;
+}
+
+
+.total-kejin {
+    margin-left: 10px;
+    color: #909090;
 }

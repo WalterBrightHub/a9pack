@@ -7,7 +7,10 @@ class Index extends React.Component{
     super(props);
     this.state= {
       packs: [
-
+        {
+          name: 'Koenigsegg Jesko',
+          url: '/jesko'
+        },
         {
           name: 'Ferrari LaFerrari Aperta',
           url: '/aperta'
