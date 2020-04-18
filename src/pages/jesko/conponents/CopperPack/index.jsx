@@ -31,7 +31,7 @@ const Pack = ({pack_content, onAddCredit, onAddCount648, onAddCarCard, onShowRew
     onAddCountCopperPack(n)
 
     const dropRates = pack_content.map(item => item.drop_rate)
-    //console.log(dropRates.reduce((sum, rate) => sum + rate))  //校验概率之和
+    // console.log(dropRates.reduce((sum, rate) => sum + rate))  //校验概率之和
     let infos = []
     for (let i = 0; i < n; i++) {
       const item_index = luckyWithShuffle(dropRates)
@@ -89,7 +89,7 @@ const Pack = ({pack_content, onAddCredit, onAddCount648, onAddCarCard, onShowRew
         items.push(item)
       }
     }
-    items.map(item => {
+    for (let item of items) {
       const {num, type, car_code} = item
       if (type === 'car_card') {
         infos.push({type, car_code, num})
@@ -99,15 +99,14 @@ const Pack = ({pack_content, onAddCredit, onAddCount648, onAddCarCard, onShowRew
         onAddCredit(num)
       }
 
-    })
+    }
 
     onShowRewordModal(infos)
   }
 
   return <div>
 
-    <p>有机会直接解锁 McLaren Senna。</p>
-    <p>购买十连礼包，必定获得 Senna 图纸。</p>
+    <p>购买十连礼包，必定获得 Koenigsegg Jesko 图纸。</p>
 
     <Flex>
       <Flex.Item>

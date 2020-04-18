@@ -138,7 +138,51 @@ const carInfo = {
     lastName: 'DS E-Tense',
     quality: 'uncommon',
     starArray: [0, 20, 18, 36]
+  },
+  'Jesko': {
+    firstName: 'Koenigsegg',
+    lastName: 'Jesko',
+    quality: 'epic',
+    starArray: [0, 0, 40, 45, 60, 85, 85]
+  },
+  'G60': {
+    firstName: 'Ginetta',
+    lastName: 'G60',
+    quality: 'uncommon',
+    starArray: [0, 30, 18, 24, 36]
+  },
+  'Artega': {
+    firstName: 'Artega',
+    lastName: 'Scalo Superelletra',
+    quality: 'rare',
+    starArray: [0, 40, 18, 24, 36]
+  },
+  '488 GTB': {
+    firstName: 'Ferrari',
+    lastName: '488 GTB',
+    quality: 'rare',
+    starArray: [0, 40, 18, 24, 36]
+  },
+  'H2': {
+    firstName: 'Pinnfarina',
+    lastName: 'H2 Speed',
+    quality: 'rare',
+    starArray: [0, 40, 18, 24, 36]
+  },
+  'Centenario': {
+    firstName: 'Lamborghini',
+    lastName: 'Centenario',
+    quality: 'rare',
+    starArray: [0, 35, 15, 21, 24, 36]
+  },
+
+  '50th': {
+    firstName: 'Chevrolet',
+    lastName: '50th Edition',
+    quality: 'uncommon',
+    starArray: [0, 18, 25, 36]
   }
+
 }
 
 

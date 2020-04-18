@@ -2,7 +2,7 @@ import React from "react";
 import {Card, Flex, Modal, WhiteSpace} from "antd-mobile";
 import CopperPack from "../CopperPack";
 import TokenPack from '../TokenPack'
-import CarCard from "../../../../conponents/CarCard";
+import CarCard from "../../../../components/CarCard";
 
 import '../../../../style/common.css'
 

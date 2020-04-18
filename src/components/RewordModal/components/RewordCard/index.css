@@ -1,0 +1,61 @@
+.reword-block {
+    /*padding: 10px;*/
+    color: #303030;
+    /*display: inline-block;*/
+    border-radius: 5px;
+    font-weight: bold;
+    width: 80px;
+    height: 100px;
+    /*text-align: center;*/
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+}
+
+.reword-name {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px;
+    margin-top: auto;
+    font-size: 12px;
+
+}
+
+
+.reword-block + .reword-block {
+    /*margin-top: 0.5em;*/
+}
+
+.reword-num {
+    font-weight: bold;
+    color: white;
+    padding: 2px 6px;
+    font-size: 14px;
+
+    background-color: #f0ff4c;
+    color: black;
+    /*display: inline-block;*/
+    align-self: flex-end;
+}
+
+.reword-icon {
+    width: 36px;
+    height: 36px;
+    margin: auto auto;
+}
+
+.reword-credit {
+    background-color: #ffc600;
+}
+
+.reword-uncommon {
+    background-color: #01a5f3;
+}
+
+.reword-rare {
+    background-color: #c871ff;
+}
+
+.reword-epic {
+    background-color: #fdce33;
+}

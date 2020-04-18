@@ -1,0 +1,20 @@
+.reword-modal {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.reword-modal-title {
+    color: #303030;
+    font-size: 24px;
+    margin: 10px 0 0 10px;
+}
+
+
+.reword-modal-next-button {
+    background-color: #30c21d;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    display: inline-block;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card, Flex, Modal, WhiteSpace} from "antd-mobile";
 
-import CarCard from "../../../../conponents/CarCard";
+import CarCard from "../../../../components/CarCard";
 
 import Pack from "../Pack";
 

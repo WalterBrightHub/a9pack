@@ -1,11 +1,11 @@
 import React from "react";
 import {Card, Flex, Modal,} from "antd-mobile";
 import CopperPack from "../CopperPack";
-import CarCard from "../../../../conponents/CarCard";
+import CarCard from "../../../../components/CarCard";
 import carInfo from "../../../../model/carInfo";
 
 import '../../../../style/common.css'
-import RewordCard from "../../../../conponents/RewordCard";
+import RewordCard from "../../../../components/RewordModal/components/RewordCard";
 
 class PackSimulator extends React.Component {
   constructor(props) {
